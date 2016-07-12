@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="olympicapp">
+  <head>
+    <meta charset="utf-8">
+    <title>Olympic Marketing Test</title>
+    <script src="angular.min.js"></script>
+    <!-- <script src="/routers/index.js" charset="utf-8"></script> -->
+    <script src="client.js"></script>
+  </head>
+  <body ng-controller="maincontroller">
+    <h1>Generate random athletes!</h1>
+    <button ng-click="handleClick()">Generate Random Athletes</button>
+    <div class="athletes" ng-show="toggle">
+      <h3>Archer:</h3>
+      {{archer.name}}
+      <br>
+      {{archer.home}}
+      <h3>Weight Lifter: </h3>
+      {{weightlifter.name}}
+      <br>
+      {{weightlifter.home}}
+      <h3>Judo Athlete: </h3>
+      {{judoer.name}}
+      <br>
+      {{judoer.home}}
+      <h3>Syncronized Swimmer: </h3>
+      {{swimmer.name}}
+      <br>
+      {{swimmer.home}}
+      <h3>Canoe/Kayak Athlete: </h3>
+      {{canoer.name}}
+      <br>
+      {{canoer.home}}
+    </div>
+  </body>
+</html>
