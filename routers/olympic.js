@@ -19,11 +19,13 @@ var randomindex = function getrandomindex(min, max){
 router.get('/weightlifters', function(request, response){
   var randomlifter = weightlifters[randomindex(0, weightlifters.length)];
   response.send(randomlifter);
+  console.log(randomlifter)
 });
 
 router.get('/archers', function(request, response){
   var randomarcher = archers[randomindex(0, archers.length)];
   response.send(randomarcher);
+  console.log(randomarcher)
 });
 
 router.get('/canoepeeps', function(request, response){

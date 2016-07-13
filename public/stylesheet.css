@@ -1,0 +1,40 @@
+html {
+  background: url(rio.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: .9;
+}
+h1, h2, h3 {
+  font-family: 'Bungee Shade', cursive;
+  font-weight: bold;
+  font-size: 2.75em;
+  color: #17397B;
+}
+button {
+  background: #52a62b;
+  background-image: -webkit-linear-gradient(top, #52a62b, #1b662b);
+  background-image: -moz-linear-gradient(top, #52a62b, #1b662b);
+  background-image: -ms-linear-gradient(top, #52a62b, #1b662b);
+  background-image: -o-linear-gradient(top, #52a62b, #1b662b);
+  background-image: linear-gradient(to bottom, #52a62b, #1b662b);
+  -webkit-border-radius: 18;
+  -moz-border-radius: 18;
+  border-radius: 18px;
+  font-family: 'Passion-One', serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+button:hover {
+  background: #3596ce;
+  background-image: -webkit-linear-gradient(top, #3596ce, #235593);
+  background-image: -moz-linear-gradient(top, #3596ce, #235593);
+  background-image: -ms-linear-gradient(top, #3596ce, #235593);
+  background-image: -o-linear-gradient(top, #3596ce, #235593);
+  background-image: linear-gradient(to bottom, #3596ce, #235593);
+  text-decoration: none;
+}

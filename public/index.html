@@ -3,34 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Olympic Marketing Test</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Passion+One:400,700" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet" />
     <script src="angular.min.js"></script>
-    <!-- <script src="/routers/index.js" charset="utf-8"></script> -->
+    <script src="angular-route.min.js"></script>
     <script src="client.js"></script>
+    <base href="/" />
   </head>
-  <body ng-controller="maincontroller">
+  <body>
     <h1>Generate random athletes!</h1>
-    <button ng-click="handleClick()">Generate Random Athletes</button>
-    <div class="athletes" ng-show="toggle">
-      <h3>Archer:</h3>
-      {{archer.name}}
-      <br>
-      {{archer.home}}
-      <h3>Weight Lifter: </h3>
-      {{weightlifter.name}}
-      <br>
-      {{weightlifter.home}}
-      <h3>Judo Athlete: </h3>
-      {{judoer.name}}
-      <br>
-      {{judoer.home}}
-      <h3>Syncronized Swimmer: </h3>
-      {{swimmer.name}}
-      <br>
-      {{swimmer.home}}
-      <h3>Canoe/Kayak Athlete: </h3>
-      {{canoer.name}}
-      <br>
-      {{canoer.home}}
+      <a href="/archers"><button>Archer</button></a>
+      <a href="/lifters"><button>Weight Lifter</button></a>
+      <a href="/judo"><button>Judo</button></a>
+      <a href="/swimmers"><button>Syncronized Swimmer</button></a>
+      <a href="/canoe"><button>Canoe/Kayaker</button></a>
+    <div class="athletes" ng-view>
     </div>
   </body>
 </html>
